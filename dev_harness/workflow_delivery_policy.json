@@ -1,0 +1,13 @@
+{
+  "_comment": "synthetic sample / example policy. Only two profile identities are listed; add your own historical entries here only for work that predates the anonymous-graph contract.",
+  "schema_version": 1,
+  "historical_profiles": {
+    "sample-artifact-path": "safe-relative-output",
+    "development-harness": "development-harness"
+  },
+  "pre_graph_defaults_profiles": {
+    "sample-artifact-path": "safe-relative-output",
+    "development-harness": "development-harness"
+  },
+  "note": "Frozen exemptions: listed profile identities predate the public-view / graphical-inspection contracts. New profiles must satisfy those contracts; do not append new work to these lists."
+}

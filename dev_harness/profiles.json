@@ -1,0 +1,47 @@
+{
+  "_comment": "synthetic sample / example profile registry. Each profile pins one change to its implementation files, tests and fixed runner.",
+  "schema_version": 1,
+  "profiles": {
+    "sample-artifact-path": {
+      "change": "safe-relative-output",
+      "sample": true,
+      "source_paths": ["dev_harness/project/artifact_path.py"],
+      "test_paths": ["dev_harness/project/tests/test_artifact_path.py"],
+      "runner": "unittest",
+      "cwd": "dev_harness/project",
+      "test_directory": "tests",
+      "timeout_seconds": 60
+    },
+    "development-harness": {
+      "change": "development-harness",
+      "sample": false,
+      "source_paths": [
+        "dev_harness/gate.py",
+        "dev_harness/openspec.py",
+        "dev_harness/verify_sample.py",
+        "docs/DEV_HARNESS.md",
+        "ops_harness/development.py",
+        "ops_harness/workflow_actions.py",
+        "ops_harness/workflow.py",
+        "ops_harness/workflow_cli.py",
+        "ops_harness/workflow_lock.py",
+        "ops_harness/probes.py",
+        "ops_harness/store.py",
+        "ops_harness/__main__.py",
+        "scripts/ops/harness.py",
+        "config/ops_harness.json"
+      ],
+      "test_paths": [
+        "dev_harness/tests/test_gate.py",
+        "tests/test_ops_development.py",
+        "tests/test_ops_development_integration.py",
+        "tests/test_ops_workflow.py",
+        "tests/test_ops_harness_store.py",
+        "tests/test_ops_harness_probes.py"
+      ],
+      "runner": "pytest",
+      "cwd": ".",
+      "timeout_seconds": 120
+    }
+  }
+}

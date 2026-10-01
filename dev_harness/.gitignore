@@ -1,0 +1,5 @@
+tools/node_modules/
+__pycache__/
+project/__pycache__/
+project/tests/__pycache__/
+.pytest_cache/

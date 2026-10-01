@@ -1,0 +1,20 @@
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.venv/
+venv/
+
+# secrets / local settings (never commit)
+.env
+.env.*
+!.env.example
+
+# Node
+node_modules/
+
+# local state and generated evidence
+*.sqlite
+*.sqlite3
+evidence/
+out/
